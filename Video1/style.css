@@ -1,0 +1,38 @@
+body{
+    background-color: red;
+    color: white;
+}
+.container{
+    height: 400px;
+    width: 200px;
+    background-color: white;
+    border-radius: 50px;
+    transform: translate(20%,10%);
+    animation: cool 1s infinite;
+}
+.ex{
+    height: 100px;
+    width: 100px;
+    animation: cool 8s infinite;
+    transform: translate(50%,30%);
+    border-radius: 40%;
+}
+
+@keyframes cool {
+
+    0%{
+        background-color: blueviolet;
+    }
+    25%{
+        background-color: brown;
+    }
+    50%{
+        background-color: red;
+    }
+    75%{
+        background-color: palevioletred;
+    }
+    100%{
+        background-color: blueviolet;
+    }
+}

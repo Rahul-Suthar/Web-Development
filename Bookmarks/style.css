@@ -1,0 +1,161 @@
+.Bookmarks{
+    height:650px;
+    width: 1200px;
+    background-color: skyblue;
+    border-radius: 50px;
+    transform: translate(10%,3%);
+}
+
+.Bookmarks2{
+    height: auto;
+    width: auto;
+    transform: translate(40%,200%);
+}
+.bookmarks{
+    height: 350px;
+    width: 900px;
+    background-color: skyblue;
+    border-radius: 50px;
+    transform: translate(25%,30%);
+
+}
+
+
+
+
+.Primary{
+    height: 250px;
+    width: 300px;
+    background-color: rgba(251, 255, 0, 0.632);
+    border-radius: 10%;
+    transform: translate(-20%,10%);
+    
+}
+
+.Book{
+    height:auto;
+    width: auto;
+    transform: translate(20%,10%);
+    
+}
+
+.pribook{
+    height: auto;
+    width: 250px;
+    background-color: rgba(74, 221, 81, 0.623);
+    border-radius: 50px;
+    transform: translate(-15%);
+    
+}
+
+.pri2{
+    height: auto;
+    width: auto;
+    transform: translate(8%);
+    
+}
+
+.google{
+    height: 20px;
+    width: 70px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    transform: translate(-40%,120%);
+}
+
+.g2{
+    transform: translate(15%);
+}
+.youtube{
+    height: 20px;
+    width: 70px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    transform: translate(180%,10%);
+}
+
+.y2{
+    transform: translate(13%);
+}
+.facebook{
+    height: 20px;
+    width: 80px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    transform: translate(-40%,400%);
+}
+
+.f2{
+    transform: translate(12%);
+}
+.amazon{
+    height: 20px;
+    width: 70px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    transform: translate(180%,300%);
+}
+
+.a2{
+    transform: translate(10%);
+}
+
+.secondary{
+    height: 250px;
+    width: 300px;
+    background-color: rgba(251, 255, 0, 0.632);
+    border-radius: 10%;
+    transform: translate(180%,-100%);
+    
+}
+
+.book{
+    height:auto;
+    width: auto;
+    transform: translate(20%,10%);
+    
+}
+
+.secbook{
+    height: auto;
+    width: 260px;
+    background-color: rgba(74, 221, 81, 0.623);
+    border-radius: 50px;
+    transform: translate(-15%);
+    
+}
+
+.sec2{
+    height: auto;
+    width: auto;
+    transform: translate(6%);
+    
+}
+
+.quara{
+    height: 20px;
+    width: 70px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    transform: translate(-40%,200%);
+    
+}
+
+.q2{
+    transform: translate(25%);
+
+}
+
+.X{
+    height: 20px;
+    width: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    transform: translate(270%,300%);
+    
+}
+
+.X2{
+    transform: translate(40%);
+    
+}
