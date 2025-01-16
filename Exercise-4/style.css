@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root{
+    --bgcolor : rgba(75, 171, 165, 0.566);
+    --fcolor:purple;
+    --fosize:16px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", serif;
+}
+
+body{
+    background-color: var(--bgcolor);
+}
+
+nav{
+    margin: 3px;
+    /* padding: 0 80px; */
+    border: 1px solid;
+    border-radius: 50px;
+    --bgcolor:rgb(60, 202, 190);
+    background-color: var(--bgcolor);
+    padding: 4px 9px;
+    font-size: var(--fosize);
+}
+
+nav ul{
+    padding: inherit;
+    display: flex;
+    list-style-type: none;
+    position: absolute;
+    top: 4px;
+    right: 0;
+    color: var(--fcolor);
+}
+
+li{
+    padding: 0 10px;
+}
+
+li:hover{
+    position: relative;
+    top: 2px;
+    /* border: 1px solid blue; */
+    text-decoration: underline 1px ;
+}
+
+li:active{
+    top: 0;
+}
+
+span{
+    padding: 0 10px;
+    cursor:default;
+    font-weight: 600;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}

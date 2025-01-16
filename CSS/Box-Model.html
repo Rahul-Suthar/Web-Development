@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box-Model</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .box{
+            background-color: aqua;
+        }
+
+        /* margin-collapse */
+        .box1{
+            color: yellow;
+            padding: 5px;
+            border: 2px solid black;
+            margin: 20px;
+            height: 35px;
+            box-sizing: border-box;
+        }
+        .box2{
+            color: red;
+            padding: 5px;
+            border: 2px solid blue;
+            margin: 10px;
+            height: 35px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">I'm a Box1</div>
+    <div class="box box2">I'm a Box2</div>
+</body>
+</html>

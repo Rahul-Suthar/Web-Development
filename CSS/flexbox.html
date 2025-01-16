@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+        *{
+            font-family: "Ubuntu",serif;
+        }
+
+        .con{
+            height: 500px;
+            width: 100%;
+            background-color: lightblue;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+            /* align-content: start; */
+            /* align-content: center; */
+            /* flex-direction: column; */
+            /* flex-wrap: wrap; */
+            /* to use both of above properties use below one */
+            flex-flow: row wrap;
+            /* gap: 30px; */
+            /* row-gap: 30px;
+            column-gap: 10px; */
+            gap: 30px 10px;
+        }
+
+        .item{
+            height: 70px;
+            width: 70px;
+            background-color: beige;
+            border: 1px solid black;
+            /* margin: 5px; */
+            flex-grow: 1;
+        }
+
+        .order-1{
+            order: 1;
+        }
+
+        .item1{
+            flex-grow:2;
+            align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="item item1">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+</html>

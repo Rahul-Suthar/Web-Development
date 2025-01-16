@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Fit-Cover & Positon</title>
+    <style>
+        .container{
+            height: 650px;
+            width: 700px;
+            margin: auto;
+            border: 2px solid gray;
+            border-radius: 20px;
+            /* overflow: hidden; */
+            background-image: url("https://files.idyllic.app/files/static/1320704");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-clip:padding-box;
+        }
+
+        img{
+            width: inherit;
+            height: inherit;
+            /* border-radius: inherit; */
+            object-fit: cover;
+            /* object-fit: contain; */
+            object-position: bottom right;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <img src="https://files.idyllic.app/files/static/1320704" alt=""> -->
+    </div>
+</body>
+</html>

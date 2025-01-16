@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts-texts</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+        h1{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            letter-spacing: 4px;
+            text-decoration:underline;
+            text-decoration-color: brown;
+            text-decoration-style: dashed;
+            text-align: center;
+        }
+        h2{
+            /* text-transform: capitalize; */
+            /* text-transform: uppercase; */
+            text-transform: lowercase;
+            text-align: end;
+        }
+        p{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-style: italic;
+            font-weight: 400;
+            text-decoration:underline;
+            text-decoration-color: palevioletred;
+            line-height: 2;
+            text-decoration-style:wavy;
+            text-decoration-thickness:2px;
+            text-indent: 20px;
+        }
+        
+        span{
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            text-decoration: overline;
+            text-decoration-color: red;
+            text-decoration-style:dashed;
+        }
+
+        .lorem{
+            border: 2px solid brown;
+            width: 70px;
+            word-break:break-all;
+            /*by default it's - clip*/
+            /* text-overflow:ellipsis;
+            overflow: hidden; */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Fonts</h1>
+        <h2>this Is h2</h2>
+        <p>This is a paragraph</p>
+        <p class="lorem">Another paragraph</p>
+        <span>Poppins</span>
+    </div>
+</body>
+</html>

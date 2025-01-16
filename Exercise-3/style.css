@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: rgba(227, 221, 213, 0.692);
+      }
+
+      .cards{
+        padding: 11px;
+        margin: 20px 10px;
+        /* border: 2px solid black; */
+        /* border-radius: 20px; */
+        width: calc(100vw - 30px);
+        /* box-shadow: 0 10px 20px 2px #588157; */
+      }
+
+      .card {
+        position: relative;
+        height: 65vh;
+        width: 320px;
+        border: 1px solid gray;
+        border-radius: 20px;
+        background-color: white;
+        display: inline-block;
+        margin: 5px 22px;
+        box-shadow: 5px 5px 20px 10px gray;
+      }
+
+      .card:hover{
+        transform: translate(0, -5%);
+        box-shadow: 0 0 50px 0 #8eecf560;
+      }
+
+      .image {
+        height: 250px;
+        width: 95%;
+        margin: 8px;
+        border: 1px solid black;
+        border-radius: 20px;
+        overflow: hidden;
+      }
+
+      img {
+        height: inherit;
+        width: 100%;
+      }
+
+      .caption{
+        margin: 0;
+        height: 40px;
+        width: 50%;
+        padding: 0 2px;
+        position: absolute;
+        top: 50%;
+        left: 20px;
+      }
+
+      .s{
+        width: 40%;
+        border: 1px solid gray;
+        border-radius: 20px;
+        padding: 3px;
+        font-size: 14px;
+        color: gray;
+        display: inline-block;
+        text-align: center;
+        position: relative;
+        left: 10px;
+      }
+      .s1{
+        width: 30%;
+        position: relative;
+        left: 30px;
+      }
+
+      h2{
+        padding: 15px 0;
+      }
+      .content{
+        padding: 15px 20px;
+        height: 240px;
+        width: 100%;
+        position: absolute;
+        top: 55%;
+      }
+
+      .btn{
+        color: #000dff;
+        margin: 5px 22%;
+        padding: 10px;
+        position: absolute;
+        bottom: 0;
+        width: 130px;
+        border-radius: 40px;
+        text-align: center;
+        background-color: #0095ff99;
+        cursor: pointer;
+        font-weight: 600;
+      }
+/* 
+      .btn button{
+        background-color: inherit;
+      } */
+
+      .btn:active{
+        background-color: #0095ff;
+      }
+
+      p{
+        color: gray;
+        height: 45%;
+        overflow: hidden;
+      }

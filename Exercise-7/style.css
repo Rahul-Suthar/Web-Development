@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+header, nav{
+    height: 80px;
+    background: white;
+    box-shadow: 0 1px 15px gray;
+    position: sticky;
+    top: 0;
+}
+
+nav, .right, ul, li{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.right{
+    gap: 50px;
+}
+
+ul{
+    gap: 15px;
+}
+
+li{
+    gap: 7px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+li:hover{
+    cursor: pointer;
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.download{
+    height: 200px;
+    width: 700px;
+    border: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+button{
+    background-color: #99ddff;
+    border: none;
+    height: 50px;
+    width: 200px;
+    border-radius: inherit;
+}
+
+.ds{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 150px 150px 150px;
+    gap: 20px;
+}
+
+.ds button{
+    height: 40px;
+    width: 150px;
+    border-radius: 20px
+}
+
+.ds p{
+    place-self: center;
+    font-size: 22px;
+}
+
+.d{
+    height: 150px;
+    border-radius: 20px;
+    background-color: #d4f1ff;
+    display: grid;
+    grid-template-areas: 'h'
+                        'e'
+                        'd';
+}
+
+.d>p{
+    grid-area: h;
+}
+
+.d button{
+    grid-area: d;
+    place-self: center;
+}

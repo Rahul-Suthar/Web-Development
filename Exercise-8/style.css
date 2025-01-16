@@ -1,0 +1,61 @@
+.cont{
+    margin: auto;
+    width: 95vw;
+    height: 60vh;
+    background-color: blue;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+@media screen and (max-width:600px){
+    .cont{
+        height: 30vh;
+    }
+}
+
+.box{
+    width: 70px;
+    height: 70px;
+    background-color: yellow;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    /* transition: all 2s ease 1ms; */
+    animation: x 4.5s linear infinite, y 1s ease-out alternate infinite;
+}
+
+@keyframes x {
+    /* 0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(95vw);
+    } */
+
+    from{
+        left: 0;
+    }
+    to{
+        left: 100%;
+    }
+}
+
+@keyframes y {
+    /* 0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(calc(-60vh + 70px));
+    } */
+    
+    
+    from{
+        bottom: 0;
+    }
+    to{
+        bottom: calc(100% - 70px);
+        box-shadow: 1px 0 5px black;
+    }
+}

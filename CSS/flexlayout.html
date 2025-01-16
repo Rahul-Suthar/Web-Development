@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex - layout</title>
+    <style>
+        .cont{
+            width: 80vw;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            border: 1px solid gray;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: rgb(46, 46, 150);
+        }
+
+        .name{
+            border: inherit;
+            border-radius: 5px;
+            flex: 1 0 140px;
+            width: calc(80vw - 10px);
+        }
+
+        .pass{
+            border: inherit;
+            border-radius: 5px;
+            flex: 1 0 120px;
+            width: calc(80vw - 10px);
+        }
+
+        button{
+            border: inherit;
+            border-radius: 5px;
+            flex: 1 0 60px;
+            background-color: rgb(255, 0, 8);
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <input class="name" placeholder="name">
+        <input class="pass" placeholder="password">
+        <button>Submit</button>
+    </div>
+</body>
+</html>
