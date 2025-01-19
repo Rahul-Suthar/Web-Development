@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <style>
+      * {
+        font-family: cursive;
+        box-sizing: border-box;
+      }
+
+      body{
+        margin: 0;
+        height: 100vh;
+        display: grid;
+        place-items: center;
+      }
+
+      .stopwatch {
+        height: 350px;
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px;
+        border: 2px solid;
+        border-radius: 50px;
+        /* margin: auto; */
+        box-shadow: 10px 5px 50px gray;
+        position: relative;
+      }
+
+      #count {
+        border: inherit;
+        border-radius: 10px;
+        padding: 5px;
+        max-width: 120px;
+        text-align: center;
+      }
+
+      #start {
+        border: inherit;
+        border-radius: 10px;
+        padding: 5px 60px;
+        cursor: pointer;
+      }
+
+      #sets{
+        cursor: pointer;
+      }
+
+      .setting {
+        border: 2px solid;
+        padding: 5px;
+        border-radius: 10px;
+        position: absolute;
+        bottom:  -50px;
+        background-color: aliceblue;
+        box-shadow: 1px 1px 6px rebeccapurple;
+      }
+
+      #speed {
+        width: 60px;
+        border: 2px solid;
+        border-radius: 10px;
+        text-align: center;
+      }
+
+      .show{
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="stopwatch">
+      <input type="number" id="count" placeholder="Time( in sec.)" required />
+      <button id="start">Start</button>
+      <div id="timer">Timer</div>
+      <i class="fa-solid fa-gear" id="sets"></i>
+      <div class="setting show" id="setting">
+        <label for="speed">Set speed :</label>
+        <input type="number" name="speed" id="speed" placeholder="(1x)" />
+      </div>
+    </div>
+
+    <script>
+      let count = document.getElementById("count");
+      let btn = document.getElementById("start");
+      let timer = document.getElementById("timer");
+      let sets = document.getElementById("sets")
+      let setting = document.getElementById("setting");
+      
+      sets.addEventListener("click", ()=>{
+        setting.classList.toggle("show")
+      })
+      
+      
+      btn.addEventListener("click", () => {
+        let speed = parseInt(document.getElementById("speed").value) || 1;
+        let t = parseInt(count.value)-1;
+        //-1 to match the pace of real timer as this will start after the delay of speed(1s default)
+        let countDown = setInterval(() => {
+          timer.innerText = t;
+          if (t <= 0) {
+            clearInterval(countDown);
+            timer.innerHTML = "<b>Time's Up</b>";
+          }
+          t--;
+        }, 1000 / speed);
+        console.log(speed);
+      });
+    </script>
+  </body>
+</html>
